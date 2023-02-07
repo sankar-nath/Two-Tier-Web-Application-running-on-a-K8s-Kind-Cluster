@@ -30,10 +30,10 @@ resource "aws_key_pair" "my_key" {
   public_key = file("sankarKey.pub")
 }
 
-resource "aws_ecr_repository" "webapp-ecr" {
-  name = "webapp-ecr"
+resource "aws_ecr_repository" "colorapp-awsecr" {
+  name = "colorapp-awsecr"
 }
 
-resource "aws_ecr_repository" "mysql-ecr" {
-  name = "mysql-ecr"
+resource "aws_ecr_repository" "mysqldb-awsecr" {
+  name = "mysqldb-awsecr"
 }
