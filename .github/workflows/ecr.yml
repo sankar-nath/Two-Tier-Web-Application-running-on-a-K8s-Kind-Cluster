@@ -23,9 +23,9 @@ on:
     - ./**
     
 env:
-  APPLICATION_ECR_PREFIX:  webapp
-  DATABASE_ECR_PREFIX: mysql
-  ECR_REPOSITORY: ecr
+  APPLICATION_ECR_PREFIX:  colorapp
+  DATABASE_ECR_PREFIX: mysqldb
+  ECR_REPOSITORY: awsecr
   WORKING_DIR: ./
   AWS_REGION: us-east-1
   
