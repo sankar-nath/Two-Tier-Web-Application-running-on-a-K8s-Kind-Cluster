@@ -1,6 +1,13 @@
+This repository was cloned from my professor's repo to complete the first assignment for CLO835
+In this Assignment we deployed containerized application. The web application takes in employee details and stores it in a database. Both the app and the database are being run as containers running on an EC2 instance.
+
+Instructions
+1. Go to the terraformCode folder and run tf to create the EC2 instance, two ECR repositories and the security group.
+2. From the repository, run the ecr.yml file to create docker images which will get pushed to the ECR repositories
+3. Log in to EC2 instance, pull the docker images, run the sql container and then the webapp container. 
+4. Use the public IP of the ec2 instance to access the web app.
+
 # Install the required MySQL package
-#test
-#test2
 
 sudo apt-get update -y
 sudo apt-get install mysql-client -y
