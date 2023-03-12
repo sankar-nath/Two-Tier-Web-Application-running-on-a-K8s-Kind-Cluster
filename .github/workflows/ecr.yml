@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
     branches:
     - master
+    - main
     - dev
     paths:
     - ./**
@@ -11,6 +12,7 @@ on:
   push:
     branches:
     - master
+    - main
     - dev
     paths:
     - ./**
@@ -18,11 +20,13 @@ on:
   pull_request:
     branches:
     - master
+    - main
     - dev
     paths:
     - ./**
     
 env:
+  ECR_REGISTRY:  359775151382
   APPLICATION_ECR_PREFIX:  colorapp
   DATABASE_ECR_PREFIX: mysqldb
   ECR_REPOSITORY: assignment2
