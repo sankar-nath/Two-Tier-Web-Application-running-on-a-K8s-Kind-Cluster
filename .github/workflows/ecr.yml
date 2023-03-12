@@ -29,7 +29,7 @@ env:
   ECR_REGISTRY:  359775151382
   APPLICATION_ECR_PREFIX:  colorapp
   DATABASE_ECR_PREFIX: mysqldb
-  ECR_REPOSITORY: assignment2
+  ECR_REPOSITORY: awsecr
   WORKING_DIR: ./
   AWS_REGION: us-east-1
   
