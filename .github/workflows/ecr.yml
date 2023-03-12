@@ -25,7 +25,7 @@ on:
 env:
   APPLICATION_ECR_PREFIX:  colorapp
   DATABASE_ECR_PREFIX: mysqldb
-  ECR_REPOSITORY: awsecr
+  ECR_REPOSITORY: assignment2
   WORKING_DIR: ./
   AWS_REGION: us-east-1
   
