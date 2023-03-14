@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: application-pod
+  name: colorapp-pod
   labels:
-    app: application
+    app: colorapp
 spec:
   containers:
-  - name: application-container
+  - name: colorapp
     image: 359775151382.dkr.ecr.us-east-1.amazonaws.com/colorapp-awsecr:latest
     ports:
     - containerPort: 8080
