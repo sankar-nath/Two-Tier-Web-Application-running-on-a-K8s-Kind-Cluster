@@ -13,7 +13,7 @@ data "aws_ami" "latest_amazon_linux" {
 
 resource "aws_instance" "sankar_server" {
   ami                  = data.aws_ami.latest_amazon_linux.id
-  instance_type        = "t3.micro"
+  instance_type        = "t3.medium"
   subnet_id            = aws_subnet.public_subnet.id
   iam_instance_profile = "LabInstanceProfile"
   security_groups      = [aws_security_group.webapp_sg.id]
