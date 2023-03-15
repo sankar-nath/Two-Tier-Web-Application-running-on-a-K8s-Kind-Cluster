@@ -23,7 +23,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: DBHOST
-              value: "mysql.sankarnath-db.svc.cluster.local"
+              value: "mysqldb.sankarnath-db.svc.cluster.local"
             - name: DBUSER
               value: "root"
             - name: DBPWD
