@@ -17,9 +17,6 @@ spec:
         containers:
             - name: mysqldb
               image: 359775151382.dkr.ecr.us-east-1.amazonaws.com/mysqldb-awsecr:latest
-              env:
-            - name: MYSQL_ROOT_PASSWORD
-              value: pw
               ports:
               - containerPort: 3306
               env:
