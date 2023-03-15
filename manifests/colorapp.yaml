@@ -10,5 +10,18 @@ spec:
     image: 359775151382.dkr.ecr.us-east-1.amazonaws.com/colorapp-awsecr:latest
     ports:
     - containerPort: 8080
+    env:
+    - name: DBHOST
+      value: "127.0.0.1"
+    - name: DBUSER
+      value: "root"
+    - name: DBPWD
+      value: "pw"
+    - name: DBPORT
+      value: "3306"
+    - name: APP_COLOR
+      value: "lime"
+    - name: DATABASE
+      value: "employees"
   imagePullSecrets:
   - name: regcred
