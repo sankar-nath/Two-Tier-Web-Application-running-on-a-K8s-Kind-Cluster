@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: mysqldbReplicaSet
+  name: mysqldb-replicaset
   labels:
     app: mysqldb
 spec:
