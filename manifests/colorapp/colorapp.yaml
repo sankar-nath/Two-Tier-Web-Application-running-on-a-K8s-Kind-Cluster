@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: colorappPod
+  name: colorapp-pod
   labels:
     app: colorapp
 spec:
@@ -12,7 +12,7 @@ spec:
     - containerPort: 8080
     env:
     - name: DBHOST
-      value: "127.0.0.1"
+      value: "mysql.sankar-db.svc.cluster.local"
     - name: DBUSER
       value: "root"
     - name: DBPWD
@@ -23,5 +23,3 @@ spec:
       value: "lime"
     - name: DATABASE
       value: "employees"
-  imagePullSecrets:
-  - name: regcred

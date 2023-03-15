@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: colorappReplicaSet
+  name: colorapp-replicaset
   labels:
     app: colorapp
 
@@ -21,7 +21,7 @@ spec:
           image: 359775151382.dkr.ecr.us-east-1.amazonaws.com/colorapp-awsecr:latest
           env:
           - name: DBHOST
-            value: "127.0.0.1"
+            value: "mysql.sankar-db.svc.cluster.local"
           - name: DBUSER
             value: "root"
           - name: DBPWD

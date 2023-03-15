@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: colorappDeployment
+  name: colorapp-deployment
   labels:
     app: colorapp
 
@@ -23,7 +23,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: DBHOST
-              value: "127.0.0.1"
+              value: "mysql.sankar-db.svc.cluster.local"
             - name: DBUSER
               value: "root"
             - name: DBPWD
