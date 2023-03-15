@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: colorapp-pod
+  name: colorappPod
   labels:
     app: colorapp
 spec:
