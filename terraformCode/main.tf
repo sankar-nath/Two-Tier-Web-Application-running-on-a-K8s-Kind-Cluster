@@ -27,7 +27,7 @@ resource "aws_instance" "sankar_server" {
 # Adding SSH key to Amazon EC2
 resource "aws_key_pair" "my_key" {
   key_name   = "sankarKey"
-  public_key = file("sankarKey.pub")
+  public_key = file("~/.ssh/sankarKey.pub")
 }
 
 resource "aws_ecr_repository" "colorapp-awsecr" {
