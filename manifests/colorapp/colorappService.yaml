@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: colorapp
   labels:
-    app: colorapp
+    app: employees
 spec:
 
   selector:
-      app: colorapp
+      app: employees
 
   type: NodePort
   ports:

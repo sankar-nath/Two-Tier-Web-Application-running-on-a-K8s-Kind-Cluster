@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: colorapp
   labels:
-    app: colorapp
+    app: employees
 spec:
   ports:
     - port: 8080

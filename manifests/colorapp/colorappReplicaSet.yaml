@@ -3,18 +3,18 @@ kind: ReplicaSet
 metadata:
   name: colorapp-replicaset
   labels:
-    app: colorapp
+    app: employees
 
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: colorapp
+      app: employees
 
   template:
     metadata:
       labels:
-        app: colorapp
+        app: employees
     spec:
       containers:
         - name: colorapp
