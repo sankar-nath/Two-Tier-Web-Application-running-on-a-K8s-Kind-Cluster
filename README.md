@@ -1,11 +1,14 @@
-This repository was cloned from my professor's repo to complete the first assignment for CLO835
-In this Assignment we deployed containerized application. The web application takes in employee details and stores it in a database. Both the app and the database are being run as containers running on an EC2 instance.
+This repository was cloned from my professor's repo to complete the second assignment for CLO835
+In this Assignment we deployed containerized application on a K8s kind cluster running on an Ec2 instance. The web application takes in employee details and stores it in a database. Both the app and the database are being run as containers running on an EC2 instance.
 
 Instructions
 1. Go to the terraformCode folder and run tf to create the EC2 instance, two ECR repositories and the security group.
 2. From the repository, run the ecr.yml file to create docker images which will get pushed to the ECR repositories
-3. Log in to EC2 instance, pull the docker images, run the sql container and then the webapp container. 
-4. Use the public IP of the ec2 instance to access the web app.
+3. Copy the manifests folder into the ec2 instance's /tmp folder
+3. Log in to EC2 instance using ssh, set up the kind cluster using the init_kind.sh and kind.yaml files. You may need to chmod 777 the files.
+4. Use kubectl apply on the yaml files to set up the pods, the replicasets and the deployment. 
+5. The application can be accessed from the public IP of the EC2 instance once the NodePort has been exposed. You may need to modify the security group to achieve this.
+4. Use the public IP:Port of the ec2 instance to access the web app
 
 # Install the required MySQL package
 
